@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <link rel="stylesheet" href="resources/ol3/ol.css" type="text/css">
+    <link rel="stylesheet" href="resources/bootstrap/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="resources/bootstrap/bootstrap-responsive.min.css" type="text/css">
+    <link rel="stylesheet" href="resources/css/layout.css" type="text/css">
+    <title>Vector Icon Example</title>
+    <style>
+        #map {
+            position: relative;
+        }
+
+        #popup {
+            padding-bottom: 45px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="#"><img src="resources/image/logo.png"> Gao de offline</a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span12">
+                <div id="map" class="map">
+                    <div id="popup"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span12">
+
+
+            <table class="table table-hover">
+                <tbody>
+                    <tr>
+                        <td>
+                            <span>墨卡托经纬度</span>
+                            <input type="text" name="lnglat" id="lnglat" value="12957320.099352468,4852676.693359724" required="required" pattern="" title="" placeholder="墨卡托经纬度">
+                            <span>GCJ-02经纬度</span>
+                            <input type="text" name="lnglat1" id="lnglat1" value="116.40383044814158,39.910055451006656" required="required" pattern="" title="" placeholder="GCJ-02经纬度">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button id='bt1' type="button" class="btn btn-default" onclick="addMarker('icon');">标注A</button>
+                            <button id='bt2' type="button" class="btn btn-default" onclick="removeMarker('icon');">删除A</button>
+                            <button id='bt3' type="button" class="btn btn-default" onclick="addMarker('fire_extinguisher');">标注B</button>
+                            <button id='bt4' type="button" class="btn btn-default" onclick="removeMarker('fire_extinguisher');">删除B</button>
+                            <button id='bt5' type="button" class="btn btn-default" onclick="addMarker('user_firefighter_black');">标注C</button>
+                            <button id='bt6' type="button" class="btn btn-default" onclick="removeMarker('user_firefighter_black');">删除C</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="resources/jquery/jquery.min.js" type="text/javascript"></script>
+    <script src="resources/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+    <script src="resources/js/example-behaviour.js" type="text/javascript"></script>
+    <script src="resources/js/loader.js?id=icon" type="text/javascript"></script>
+</body>
+
+</html>

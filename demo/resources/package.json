@@ -1,0 +1,32 @@
+{
+  "name": "openlayers-website",
+  "version": "4.2.0",
+  "description": "Website for OpenLayers",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/openlayers/openlayers.github.io.git"
+  },
+  "license": "BSD-2-Clause",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "assemble": "0.4.37",
+    "grunt": "0.4.4",
+    "grunt-cli": "0.1.13",
+    "grunt-concurrent": "0.5.0",
+    "grunt-contrib-clean": "0.5.0",
+    "grunt-contrib-connect": "0.11.2",
+    "grunt-contrib-copy": "0.5.0",
+    "grunt-contrib-less": "0.11.0",
+    "grunt-contrib-uglify": "0.4.0",
+    "grunt-contrib-watch": "0.6.1",
+    "grunt-gh-pages": "0.9.1",
+    "grunt-zip": "0.17.1",
+    "q": "0.9.7"
+  },
+  "scripts": {
+    "start": "grunt start",
+    "build": "grunt build",
+    "deploy": "grunt deploy",
+    "zip": "grunt zip"
+  }
+}
